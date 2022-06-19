@@ -1,10 +1,9 @@
 import React from 'react';
+import TableUserComponent from '../../components/table-users';
 
-const TableOfUser = () => {
+const TableOfUser = ({ match }) => {
     return (
-        <div>
-            <p>aaassss</p>
-        </div>
+        <TableUserComponent match={match} />
     );
 };
 

@@ -7,7 +7,7 @@ import { StyleTableUserComponent } from './style';
 const TableUserComponent = () => {
     const [dataUsers, setDataUsers] = useState([]);
     const [page, setPage] = useState(1);
-    const [userPerPage, setUserPerPage] = useState(20);
+    const [userPerPage, setUserPerPage] = useState(10);
 
     const handleClickPage = (page) => {
         setPage(page);
@@ -32,6 +32,7 @@ const TableUserComponent = () => {
 
     return (
         <StyleTableUserComponent>
+            <h2>List users</h2>
             <table>
                 <thead>
                     <tr>
